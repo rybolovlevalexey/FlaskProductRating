@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Products rating</title>
+    <link rel="stylesheet" type="text/css"
+          href="C:\pythonDataScienceForFlask\product_rating_app\templates\styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .header_div {
+            background-color: #7FFF00; /* салатовый */
+            padding: 10px;
+            text-align: right;
+        }
+        .header_a {
+            text-decoration: none;
+            color: #006400; /* тёмно-зелёный */
+            margin-right: 10px;
+        }
+        .header_hr {
+            border: none;
+            border-top: 1px solid #008000; /* зелёный */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="header_div">
+    <a href="/" class="header_a">На главную</a>
+    <a href="/new" class="header_a">Добавить продукт</a>
+</div>
+
+{% block content %}
+{% endblock %}
+</body>
+</html>
