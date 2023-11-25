@@ -10,6 +10,26 @@
             margin: 0;
             padding: 0;
         }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+          background-color: #ff6600; /* изменяем цвет фона при наведении */
+        }
+        .button span {
+          color: #333; /* задаем цвет текста внутри кнопки */
+          font-weight: bold; /* делаем текст чуть более контрастным */
+        }
         .header_div {
             background-color: #7FFF00; /* салатовый */
             padding: 10px;
@@ -25,13 +45,45 @@
             border-top: 1px solid #008000; /* зелёный */
             margin-top: 10px;
         }
+
+        .registration-form form {
+          width: 50%;
+          margin: 0 auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          background-color: #f9f9f9;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .registration-form form label {
+          display: block;
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+        .registration-form form input {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+        }
+        .registration-form form button {
+          background-color: #ff6600;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+        }
+        .registration-form form button:hover {
+          background-color: #ff9933;
+        }
+
     </style>
 </head>
 
 <body>
 <div class="header_div">
-    <a href="/" class="header_a">На главную</a>
-    <a href="/new" class="header_a">Добавить продукт</a>
+    <a href="/" class="header_a button">На главную</a>
+    <a href="/new_product" class="header_a button">Добавить продукт</a>
+    <a href="/login" class="header_a button">Войти/зарегистрироваться</a>
 </div>
 
 {% block content %}
